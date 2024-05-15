@@ -11,6 +11,7 @@ const appointmentSchema = mongoose.Schema({
 	appointmentDate: { type: Date, required: true },
 	appointmentStartTime: { type: String, required: true },
 	appointmentEndTime: { type: String, required: true },
+	appointmentStatus: { type: String, default: "unconfirmed" },
 	appointmentNotes: { type: String, required: true },
 	createdAt: { type: Date, default: new Date() },
 	updatedAt: { type: Date, default: new Date() },
